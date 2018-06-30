@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: k12x-model-spring
+
+logging:
+  level:
+    com:
+      pearson:
+        k12x:
+          model:
+            spring: INFO
+    root: WARN
+    org:
+      springframework: WARN

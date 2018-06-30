@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: routing-engine
+
+server:
+  port: 9900
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+zuul:
+  #Service will be mapped under the /api URI
+  #prefix: /api
+  routes:
+    product:
+      path: /product/**
+      serviceId: product-manager
+      #url: http://localhost:9001/product
+    productmodel:
+      path: /productmodel/**
+      serviceId: product-model-manager
+      #url: http://localhost:9002/productmodel
+  host:
+    connect-timeout-millis: 60000 # starting the connection
+    socket-timeout-millis: 60000  # monitor the continuous incoming data flow

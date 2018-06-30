@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: product-model-manager
+  data:
+    mongodb:
+      host: ds117691.mlab.com
+      port: 17691
+      database: k12x-dev
+      username: vkum985
+      password: vkum985
+
+server:
+  port: 9002
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+logging:
+  level:
+    com:
+      pearson:
+        k12x:
+          productmodel: INFO
+    root: WARN
+    org:
+      springframework: WARN
