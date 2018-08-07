@@ -30,8 +30,8 @@ eureka:
 logging:
   level:
     com:
-      pearson:
-        k12x:
+      person:
+        sam:
           product: INFO
     root: WARN
     org:

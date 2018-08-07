@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sam-model-spring
+
+logging:
+  level:
+    com:
+      person:
+        sam:
+          model:
+            spring: INFO
+    root: WARN
+    org:
+      springframework: WARN
