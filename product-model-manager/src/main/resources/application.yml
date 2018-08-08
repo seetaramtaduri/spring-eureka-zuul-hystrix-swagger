@@ -31,8 +31,7 @@ logging:
   level:
     com:
       person:
-        sam:
-          productmodel: INFO
+        productmodel: INFO
     root: WARN
     org:
       springframework: WARN

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: model-spring
+
+logging:
+  level:
+    com:
+      person:
+        model:
+          spring: INFO
+    root: WARN
+    org:
+      springframework: WARN
